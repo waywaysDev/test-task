@@ -1,4 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
+import { MatchView } from "../MatchView";
 
 describe('MatchView Integration', () => {
     const startMatch = (homeTeam, awayTeam) => {

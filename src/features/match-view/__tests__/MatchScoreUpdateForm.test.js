@@ -1,4 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
+import { MatchList } from "../components";
 
 describe('MatchList Component', () => {
     const matches = [

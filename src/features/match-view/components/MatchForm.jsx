@@ -1,10 +1,19 @@
 import { useState } from 'react';
 import { Button, Input } from "../../../components";
 
-export const MatchForm = () => {
+export const MatchForm = ({ startMatch }) => {
     const [homeTeam, setHomeTeam] = useState('');
     const [awayTeam, setAwayTeam] = useState('');
 
+    const handleStartMatch = () => {
+        if (homeTeam && awayTeam) {
+            startMatch(homeTeam, awayTeam);
+            setHomeTeam('');
+            setAwayTeam('');
+        } else {
+            alert('Please enter both teams');
+        }
+    };
 
     return (
         <div className="match-form">
@@ -21,7 +30,7 @@ export const MatchForm = () => {
                 value={awayTeam}
                 onChange={(e) => setAwayTeam(e.target.value)}
             />
-            <Button>Start Match</Button>
+            <Button onClick={handleStartMatch}>Start Match</Button>
         </div>
     );
 };

@@ -1,3 +1,5 @@
+import { MatchScore } from '../models';
+
 describe('MatchScore Class', () => {
     let scoreboard;
 

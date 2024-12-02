@@ -14,3 +14,22 @@
     align-items: center;
     gap: 1rem;
 }
+
+.match-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.match-item span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.match-button-group {
+    display: flex;
+    gap: 1rem;
+}

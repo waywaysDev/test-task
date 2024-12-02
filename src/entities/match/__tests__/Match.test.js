@@ -1,3 +1,5 @@
+import { Match } from '../models';
+
 describe('Match Class', () => {
     it('should initialize with correct properties', () => {
         const match = new Match('1', 'Team A', 'Team B');
